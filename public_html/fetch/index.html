@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <body>
-    <input id=inp type="text">
-    <button id=bt onclick="GetData()">button</button>
-    <script>
-        function GetData() {
-            fetch(document.getElementById("inp").value)
-            .then((response) => {
-                document.getElementById("inp").value = response.text();
-            });
-        }
-    </script>
+        <script>
+            function GetData() {
+                fetch(document.getElementById("inp").value)
+                .then((response) => {
+                    document.getElementById("inp").value = response.text();
+                });
+            }
+        </script>
+    <input id="inp" type="text">
+    <button id="bt" onclick="GetData()">button</button>  
     </body>
 </html>
