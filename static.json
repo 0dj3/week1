@@ -1,9 +1,13 @@
 {
-  "headers": {
-    "/*": {
-      "X-Author": "vinnok991",
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/plain; charset=UTF-8"
-    }
-  }
+	"routes": {
+		"/login/*": "login.html",
+		"/sample/*": "sample.html",
+		"/fetch/*": "fetch.html",
+		"/promise/*": "promise.html"
+	},
+	"headers": {
+		"/**": {
+		"Access-Control-Allow-Origin": "*"
+		}
+	}
 }
